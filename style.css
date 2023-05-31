@@ -1,6 +1,61 @@
-body {
-    background: linear-gradient(to left, #302215,#241a10,#18110b,#0c0905,#000000);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
 
+body {
+    background-image: linear-gradient(to top, #302215,#000000);
+    background-attachment: fixed;
+    font-family: 'Cafe';
+}
+
+#menu{
+    list-style: none;
+    padding: 0;
+    padding-top: 20px;
+}
+#menu li{
+    display: inline;
+}
+#menu li a{
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+     
+}
+
+.nav{
+    position: relative;
+    z-index: l;
+    display: inline-block;
+    padding: 3px 10px 2px 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.nav span {
+    position: absolute;
+    z-index: l;
+    top: 0;
+    left: 5px;
+    width: 2px;
+    height: 100%;
+    transform: skewX(30deg);
+    background: yellow;
+    overflow: hidden;
+    transition: width 0.8s cubic-bezier(0.59, 0.05, 0.16, 0.99);
+
+}
+
+@font-face {
+    font-family: 'Cafe';
+    src: url('fonts/Louis\ George\ Cafe.ttf') format('truetype');
 }
 
 /*
