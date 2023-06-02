@@ -2,56 +2,71 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100%;
+}
+*::after,
+*::before{
+    box-sizing: border-box;
 }
 
 body {
-    background-image: linear-gradient(to top, #302215,#000000);
+    background-image: linear-gradient(-45deg, #302215,#000000);
     background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+}
+
+.menu
+{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50px;
     font-family: 'Cafe';
+    right: -14vw;
 }
 
-#menu{
-    list-style: none;
-    padding: 0;
-    padding-top: 20px;
-}
-#menu li{
-    display: inline;
-}
-#menu li a{
-    color: white;
-    padding: 30px;
-    font-size: 20px;
-    text-decoration: none;
-    display: inline-block;
-     
+.nav
+{
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	padding: 3px 50px 2px 30px;
+	color: white;
+	cursor: pointer;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+    
 }
 
-.nav{
-    position: relative;
-    z-index: l;
-    display: inline-block;
-    padding: 3px 10px 2px 30px;
-    color: white;
-    cursor: pointer;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+.nav span 
+{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 5px;
+	width: 2px;
+	height: 100%;
+	transform: skewX(20deg);
+	background: gold;
+	overflow: hidden;
+	transition: width 0.5s cubic-bezier(0.59,0.05,0.16,0.99);
 }
-.nav span {
-    position: absolute;
-    z-index: l;
-    top: 0;
-    left: 5px;
-    width: 2px;
-    height: 100%;
-    transform: skewX(30deg);
-    background: yellow;
-    overflow: hidden;
-    transition: width 0.8s cubic-bezier(0.59, 0.05, 0.16, 0.99);
 
+.nav span:before
+{
+	content: attr(data-content);
+	color: #000;
+	display: block;
+	transform: skew(-20deg);
+	white-space: nowrap;
+	padding: 3px 0px 2px 25px;
 }
+
+.nav:hover span
+{
+	width: calc(100% - 20px);
+}
+
 
 @font-face {
     font-family: 'Cafe';
