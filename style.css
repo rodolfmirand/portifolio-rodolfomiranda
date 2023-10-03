@@ -1,67 +1,90 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
+
 *::after,
-*::before{
-    box-sizing: border-box;
+*::before {
+	box-sizing: border-box;
+}
+a{
+	
 }
 h1 {
 	font-size: 72px;
 	font-family: 'Cafe';
 	text-shadow: 5px -2px 1px rgb(219, 187, 7);
-}h2 {
+}
+
+h2 {
 	font-family: 'TWThin';
 	font-size: 30px;
 }
 
-body {
-    background-image: linear-gradient(-45deg, #302215,#000000);
-    background-attachment: fixed;
-    min-height: 100vh;
-    display: flex;
+.bg {
+	background-image: linear-gradient(-45deg, #302215, #000000);
+	background-attachment: fixed;
+	min-height: 300vh;
+	display: flex;
 }
+
+section{
+	height: 600px;
+}
+
+
+header {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
 .redes {
 	align-items: center;
 	position: absolute;
 	display: flex;
 	gap: 50px;
-	top: 4%;
+	padding: 2% 0;
 	left: 5%;
 }
+
+.redes a:hover {
+	opacity: 0.5;
+}
+
 img {
 	height: 60%;
 	position: absolute;
 	top: 20%;
 	left: 15%;
+	pointer-events: none;
 }
 
-.menu
-{
+.menu {
 	position: absolute;
 	transform: translate(-50%, -50%);
 	top: 50px;
-    font-family: 'Cafe';
-    right: -270px;
+	font-family: 'Cafe';
+	right: -270px;
 }
 
-.nav
-{
+.nav {
 	position: relative;
 	z-index: 1;
 	display: inline-block;
-	padding: 3px 50px 2px 30px;
+	padding: 3px 25px 2px 30px;
 	color: white;
 	cursor: pointer;
 	font-size: 18px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-    
+
 }
 
-.nav span 
-{
+.nav span {
 	position: absolute;
 	z-index: 1;
 	top: 0;
@@ -71,11 +94,10 @@ img {
 	transform: skewX(20deg);
 	background: #ffd700;
 	overflow: hidden;
-	transition: width 0.5s cubic-bezier(0.59,0.05,0.16,0.99);
+	transition: width 0.5s cubic-bezier(0.59, 0.05, 0.16, 0.99);
 }
 
-.nav span:before
-{
+.nav span:before {
 	content: attr(data-content);
 	color: #000;
 	display: block;
@@ -84,8 +106,7 @@ img {
 	padding: 3px 0px 2px 25px;
 }
 
-.nav:hover span
-{
+.nav:hover span {
 	width: calc(100% - 20px);
 }
 
@@ -95,6 +116,7 @@ img {
 	top: 40%;
 	color: white;
 }
+
 .desc {
 	position: absolute;
 	right: 25%;
@@ -121,31 +143,35 @@ img {
 	from {
 		width: 0;
 	}
+
 	to {
 		width: 100%;
 	}
 }
 
-@keyframes blinkCursor{
+@keyframes blinkCursor {
 	from {
 		border-right-color: white;
 	}
+
 	to {
 		border-right-color: transparent;
 	}
 }
 
 @font-face {
-    font-family: 'Cafe';
-    src: url('fonts/Louis\ George\ Cafe.ttf') format('truetype');
+	font-family: 'Cafe';
+	src: url('fonts/Louis\ George\ Cafe.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'TypeWriter';
-    src: url('fonts/JMH\ Typewriter.ttf') format('truetype');
+	font-family: 'TypeWriter';
+	src: url('fonts/JMH\ Typewriter.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'TWThin';
-    src: url('fonts/JMH\ Typewriter-Thin.otf') format('truetype');
+	font-family: 'TWThin';
+	src: url('fonts/JMH\ Typewriter-Thin.otf') format('truetype');
 }
 
 
