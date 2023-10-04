@@ -2,15 +2,14 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *::after,
 *::before {
 	box-sizing: border-box;
 }
-a{
-	
-}
+
 h1 {
 	font-size: 72px;
 	font-family: 'Cafe';
@@ -26,11 +25,18 @@ h2 {
 	background-image: linear-gradient(-45deg, #302215, #000000);
 	background-attachment: fixed;
 	min-height: 300vh;
-	display: flex;
 }
 
-section{
-	height: 600px;
+.a-header{
+	color: white;
+	text-decoration: none;
+
+}
+
+.sec{
+	height: 950px;
+	width: 100%;
+	
 }
 
 
@@ -38,8 +44,10 @@ header {
 	position: fixed;
 	z-index: 1;
 	width: 100%;
+	height: 100px;
 	display: flex;
 	justify-content: center;
+	
 }
 
 .redes {
