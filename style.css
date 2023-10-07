@@ -24,7 +24,7 @@ h2 {
 .bg {
 	background-image: linear-gradient(-45deg, #302215, #000000);
 	background-attachment: fixed;
-	min-height: 400vh;
+	min-height: 315vh;
 }
 
 .a-header {
@@ -37,8 +37,14 @@ h2 {
 	height: 100vh;
 	width: 100%;
 }
-#sec2, #sec4{
+
+#sec2{
 	background: #ffd700;
+}
+#sec4{
+	background: #ffd700;
+	height: 15vh;
+
 }
 header {
 	position: fixed;
@@ -48,23 +54,22 @@ header {
 	display: flex;
 	justify-content: center;
 }
-.header-bg{
-	width: 100%;
-	height: 100%;
-	
-}
+
 
 .redes {
 	align-items: center;
-	position: absolute;
 	display: flex;
 	gap: 50px;
 	padding: 2% 0;
-	left: 5%;
+	right: 5%;
+	float: right;
+	position: relative;
+	height: auto;
+	width: auto;
 }
 
 .redes a:hover {
-	opacity: 0.5;
+	opacity: 0.7;
 }
 
 .img-perfil {
@@ -146,7 +151,23 @@ header {
 	bottom: 45%;
 	color: white;
 }
-
+.by-rm{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	float: left;
+	position: relative;
+	height: 15vh;
+	width: 1000px;
+	
+}
+.by-rm p{
+	color: black;
+	display: flex;
+	font-family: 'Cafe';
+	font-size: 20px;
+	font-style: oblique;
+}
 .line {
 	border-right: 2px solid white;
 	color: white;
