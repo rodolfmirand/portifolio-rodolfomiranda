@@ -24,18 +24,37 @@ h2 {
 .bg {
 	background-image: linear-gradient(-45deg, #302215, #000000);
 	background-attachment: fixed;
-	min-height: 300vh;
+	min-height: 315vh;
 }
 
+<<<<<<< HEAD
 .sec {
 	height: 950px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 
+=======
+.a-header {
+	color: white;
+	text-decoration: none;
+
 }
 
+.sec {
+	height: 100vh;
+	width: 100%;
+>>>>>>> 38a133f43c8a9ef3e1e33c47d8d944254d2d01c6
+}
 
+#sec2{
+	background: #ffd700;
+}
+#sec4{
+	background: #ffd700;
+	height: 15vh;
+
+}
 header {
 	position: fixed;
 	z-index: 1;
@@ -43,28 +62,46 @@ header {
 	height: 100px;
 	display: flex;
 	justify-content: center;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 38a133f43c8a9ef3e1e33c47d8d944254d2d01c6
 }
+
 
 .redes {
 	align-items: center;
-	position: absolute;
 	display: flex;
 	gap: 50px;
 	padding: 2% 0;
-	left: 5%;
+	right: 5%;
+	float: right;
+	position: relative;
+	height: auto;
+	width: auto;
 }
 
 .redes a:hover {
-	opacity: 0.5;
+	opacity: 0.7;
 }
 
-img {
+.img-perfil {
 	height: 60%;
 	position: absolute;
 	top: 20%;
 	left: 15%;
 	pointer-events: none;
+
+	animation: luzes 3s alternate infinite ease-in-out;
+}
+
+@keyframes luzes {
+	from{
+		filter: drop-shadow(0 0 10px #ffd700);
+	}
+	to{
+		filter: drop-shadow(0 0 40px #ffd700);
+	}
 }
 
 .menu {
@@ -132,7 +169,23 @@ img {
 	bottom: 45%;
 	color: white;
 }
-
+.by-rm{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	float: left;
+	position: relative;
+	height: 15vh;
+	width: 1000px;
+	
+}
+.by-rm p{
+	color: black;
+	display: flex;
+	font-family: 'Cafe';
+	font-size: 20px;
+	font-style: oblique;
+}
 .line {
 	border-right: 2px solid white;
 	color: white;
