@@ -26,25 +26,11 @@ h2 {
 	background-attachment: fixed;
 	min-height: 315vh;
 }
-
-<<<<<<< HEAD
 .sec {
 	height: 950px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
-
-=======
-.a-header {
-	color: white;
-	text-decoration: none;
-
-}
-
-.sec {
-	height: 100vh;
-	width: 100%;
->>>>>>> 38a133f43c8a9ef3e1e33c47d8d944254d2d01c6
 }
 
 #sec2{
@@ -62,12 +48,7 @@ header {
 	height: 100px;
 	display: flex;
 	justify-content: center;
-<<<<<<< HEAD
-
-=======
->>>>>>> 38a133f43c8a9ef3e1e33c47d8d944254d2d01c6
 }
-
 
 .redes {
 	align-items: center;
