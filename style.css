@@ -27,16 +27,12 @@ h2 {
 	min-height: 300vh;
 }
 
-.a-header{
-	color: white;
-	text-decoration: none;
-
-}
-
-.sec{
+.sec {
 	height: 950px;
 	width: 100%;
-	
+	display: flex;
+	justify-content: center;
+
 }
 
 
@@ -47,7 +43,7 @@ header {
 	height: 100px;
 	display: flex;
 	justify-content: center;
-	
+
 }
 
 .redes {
@@ -77,6 +73,11 @@ img {
 	top: 50px;
 	font-family: 'Cafe';
 	right: -270px;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
 }
 
 .nav {
@@ -120,9 +121,9 @@ img {
 
 .hello {
 	position: absolute;
-	right: 10%;
 	top: 40%;
 	color: white;
+
 }
 
 .desc {
